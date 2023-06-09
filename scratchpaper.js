@@ -169,9 +169,69 @@ console.log(food1.length);
 console.log(count[food1.length - 1]);
 
 // iteration methods:
-//   .filter()  &  .includes()
-// doesn't destroy(changer) the original array
-// stores the filtered array in a new variable
-// takes a callback function that returns either a true or a false
-// loops thru an array
-// must have a return
+// 1-   .filter()  &  .includes()
+// 2- doesn't destroy(doesn't change) the original array
+// 3- stores the filtered array in a new variable
+// 4- takes a callback function that returns either a true or a false
+// 5- loops thru an array
+// 6- must have a return
+
+// let fruits = ["apple", "pear", "mango", "orange", "pineapple"];
+
+// how to use a  .filter  to remove a mango?
+// first, need a variable: because #3, so:
+
+//#3: new variable;targetArray;useMethodFilter;
+
+// Two types of arrow functions are 'concise' body, and 'block' body.
+
+// const filteredFruit = fruits.filter(fruit => {
+//#4: take a call-back function: ().   So: (fruit => {}).
+
+// ...and since no parentheses around * fruit *, that means it refers to just the one (single) parameter within the array (just an individual item of fruits), so each fruit is each iteration as it loops through the array.
+// ...so we have fruit, and then we run a function, between the curly brackets{}, and here is where we have the question.
+// ...so in this, we create a new variable: results
+
+//   let result = fruit !== "mango";
+//   return result;
+// });
+// console.log(fruits);
+
+let fruits = ["apple", "pear", "mango", "orange", "pineapple"];
+
+const filteredFruit = fruits.filter((fruit) => {
+  let result = fruit !== "mango";
+  console.log(result);
+  return result;
+});
+console.log(filteredFruits);
+
+// so it'd going through the whole array each time; the iteration is built into the method
+
+// so this is a call-back function...
+
+// How can I use a .filter to remove the mango?
+
+// is a true/false value
+
+// let fruitExample = (fruit) => {
+//   let result = fruit !== "mango";
+//   console.log(result); // is a true/false value
+//   return result;
+// };
+
+// const filteredFruit = fruits.filter(fruitExample);
+
+// console.log(filteredFruit);
+
+let people = ["Bob", "Jane", "Jack", "Barbara", "Ruby"];
+const checkNames = people.filter((n) => n.includes("B"));
+console.log(checkNames);
+
+// n is just the parameter; could also be person, for ex
+// person) => person.includes("B"));
+
+let text = "this is a text";
+for (i in text) {
+  console.log(1);
+}
