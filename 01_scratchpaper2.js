@@ -1,5 +1,12 @@
 /*   
-arrays
+arrays:
+
+1- add elements  
+2- .length    
+3-  .push   
+4-   nested arrays   
+5-   chang values in an array
+// https://youtu.be/7W4pQQ20nJg
 easy to create a variable that has a number or a string or whatever;
 an array is a variable with a list of values inside of it.
 
@@ -12,7 +19,9 @@ arrays use []
 // console.log(a);
 /* to add elements, specify  inside the square brackets  */
 
-const a = ["A", "B", "C", "D"];
+const p = ["A", "B", "C", "D"]
+p.push("e");
+console.log(p.length);
 console.log(Object.keys(a));
 console.log(a[1]);
 console.log(a[5]);
@@ -24,15 +33,17 @@ a.push(3);
 // a.push(1, 2);
 a.push([1, 2]);
 
-// const a = [
-//   ["A","B"],
-//   [1, 2],
-// ]
+const k = [
+  ["A","B"],
+  [1, 2],
+]
 
-// console.log(a[0][1]);
+// console.log(k[0][1]);
 // change the values inside an array:
-// a[0] = 1
-// console.log(a)
+k[0] = 1
+console.log(k)
+
+
 
 // the result here is confusing:
 // B
@@ -82,7 +93,7 @@ console.log(filteredItems);
 console.log(items);
 console.log(filteredItems);
 
-// ? SECOND METHOD:  MAP METHOD
+// ? SECOND METHOD:  MAP METHOD 
 
 /*  allows to take one array, and convert it into a new  array, so all the items in the array are going to look slightly diff */
 
@@ -203,7 +214,7 @@ items.forEach((item) => {
 //  or anything need to do for every single element inside the array.
 // THIS MAKES WORKING W/ARRAYS WHEN YOU NEED TO LOOP OVER THEM SO MUCH EASIER SINCE YOU DON'T HAVE TO WRITE OUT THE CLUCKY LONG (FOR LOOP) SYNTAX
 
-// ? FIFTH METHOD:  SOME FUNCTION
+// ? FIFTH METHOD:  SOME  FUNCTION
 
 // A little diff fromt The other FUNCTIONs since instead of returning a brand new array, actually gonna return TRUE or FALSE so:
 // we can check is some of the items in this array have a price less then 100...
@@ -322,7 +333,7 @@ console.log(total);
     7- that'll output as the total - right there in the total variable
     8- which we print in the console.log(total);
 */
-// ? EIGHTH METHOD:  INCLUDES METHOD
+// ? EIGHTH METHOD:  INCLUDES METHOD 
 
 // doesn't actually take a function, just a single argument.
 // so instead of passing a bunch of objects in our array, we're just going to do an array of numbers
@@ -337,7 +348,7 @@ const includesTwo = glad.includes(3);
 console.log(includesTwo);
 
 /*   */
-
+REDUCE / INCLUDES / EVERY / SOME / FOR...EACH / FIND / MAP / FILTER / 
 /*   */
 /*   */
 /*   */

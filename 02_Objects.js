@@ -7,7 +7,6 @@ let marvelHero = {
 };
 
 /*  
-
 - Object Literal
     When our values are written within our keys. "Hard Coded"    
 
@@ -17,35 +16,28 @@ keyword objectName = {
     key: value,
 }
 
-    = Dictionaries.
+- Dictionaries.
 */
-
+console.log(theSimpsons.seasons["season one"][1]);
 let theSimpsons = {
   id: 1,
   est: 1989,
   genre: "animated",
   seasons: {
     "season one": [
-            {episode_title: "Simpsons Roasting on an Open Fire",
-             aired: "1989-12-17",
-            },
-           {episode_title: "Bart the Genius",
-            aired: "1990-01-01",
-          },
-           
-           "Dune": [
-            {episode_title: "Simpsons Roasting on an Open Fire",
-             aired: "1989-12-17",
-            },
-           {episode_title: "Bart the Genius",
-            aired: "1990-01-01",
-           },
-           
-          ],
+      {
+        episode_title: "Simpsons Roasting on an Open Fire",
+        aired: "1989-12-17",
+      },
+      {
+        episode_title: "Bart the Genius",
+        aired: "1990-01-01",
+      },
+    ],
     "season two": [
       /* mock info*/
     ],
-    "season two": [
+    "season three": [
       /* mock info*/
     ],
   },
@@ -54,6 +46,7 @@ let theSimpsons = {
 
 //  keys are considered "strings".
 //* Dot Notation and Square Bracket Notation
+
 console.log(theSimpsons.genre); // object.key
 console.log(theSimpsons["genre"]); // object["key"]
 // console.log(theSimpsons[genre]);// it wants to be in quotes cause it's looking for a variable.
