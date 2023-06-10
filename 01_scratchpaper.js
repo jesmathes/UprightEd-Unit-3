@@ -235,3 +235,5 @@ let text = "this is a text";
 for (i in text) {
   console.log(1);
 }
+
+/*   */
